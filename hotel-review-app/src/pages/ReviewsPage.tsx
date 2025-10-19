@@ -13,8 +13,7 @@ const generateRealReviews = (analytics: any) => {
     'City_Explorer', 'Beach_Lover', 'Mountain_Goer', 'Culture_Seeker', 'Food_Critic'
   ];
   
-  const categories: string[] = ['Service', 'Location', 'Amenities', 'Food', 'Room', 'Value'];
-  const sentiments: string[] = ['Positive', 'Negative', 'Neutral'];
+  // Categories and sentiments are now derived from the actual data
   
   // Generate reviews from AI analysis data
   if (analytics.aiAnalysis && analytics.aiAnalysis.topSentences) {
