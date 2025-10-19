@@ -63,4 +63,5 @@ analyzed_sentences.csv
 *.py
 hotel_v2_*.json
 hotel_v2_*.ts
+!hotel-review-app/src/data/hotel_v2_data.ts
 real_comment.csv
