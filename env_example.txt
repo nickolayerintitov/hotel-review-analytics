@@ -1,0 +1,8 @@
+# Hugging Face Token Setup
+# Get your token from: https://huggingface.co/settings/tokens
+# Then set it as an environment variable:
+
+export HF_TOKEN=your_huggingface_token_here
+
+# Or create a .env file with:
+# HF_TOKEN=your_huggingface_token_here

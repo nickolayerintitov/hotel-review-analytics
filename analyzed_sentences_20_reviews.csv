@@ -1,0 +1,134 @@
+review_id,original_rating,publishedDate,location,sentence_text,main_class,sub_class,sentiment,sentiment_score,emotion,month,Country
+review_0,5,2025-10-16,nan,I had super much fun!,Value,Overall Value,Positive,0.4062342345714569,Admiration,2025-10,Unknown
+review_0,5,2025-10-16,nan,My kids enjoyed the stay so much and the football coach/entertainer was really nice and very fun!,Amenities,Entertainment,Positive,0.9308120012283325,Joy,2025-10,Unknown
+review_1,5,2025-10-16,"Pontefract, United Kingdom",Amazing staff especially towel lady Ayşe.,Amenities,Entertainment,Positive,0.8034517168998718,Admiration,2025-10,United Kingdom
+review_1,5,2025-10-16,"Pontefract, United Kingdom",I love her smile she is so lovely.,Value,Overall Value,Positive,0.917150616645813,Love,2025-10,United Kingdom
+review_2,5,2025-10-16,nan,Beautiful hotel - the staff were helpful and the food and facilities were excellent.,Amenities,Entertainment,Positive,0.9300000667572021,Admiration,2025-10,Unknown
+review_2,5,2025-10-16,nan,The choice of activities available and entertainment were just right.,Amenities,Entertainment,Positive,0.8311914801597595,Approval,2025-10,Unknown
+review_2,5,2025-10-16,nan,The fireworks were an added extra!,Value,Overall Value,Positive,0.8287251591682434,Neutral,2025-10,Unknown
+review_3,5,2025-10-16,nan,"We’re currently staying at the Titanic Deluxe Lara, and honestly, it’s been nothing short of amazing, despite the change of rooms on the first night (it was too small).",Room,Cleanliness,Positive,0.8806779384613037,Neutral,2025-10,Unknown
+review_3,5,2025-10-16,nan,"The whole place is stunning — beautifully maintained, spotless, and full of energy.",Location,Neighborhood,Positive,0.9342405200004578,Admiration,2025-10,Unknown
+review_3,5,2025-10-16,nan,Every single member of staff goes out of their way to make you feel welcome and relaxed.,Service,Staff Attitude,Positive,0.7547874450683594,Gratitude,2025-10,Unknown
+review_3,5,2025-10-16,nan,The highlight of our trip so far has definitely been the cabana service.,Service,Staff Attitude,Positive,0.9195079207420349,Neutral,2025-10,Unknown
+review_3,5,2025-10-16,nan,"Having our own private cabana by the pool has made our holiday feel truly luxurious — comfortable loungers, chilled drinks, delicious snacks, and the most attentive staff we’ve ever come across.",Amenities,Pool,Positive,0.918319821357727,Joy,2025-10,Unknown
+review_3,5,2025-10-16,nan,"Our cabana host Hüseyin has been incredible, always checking in to make sure we have everything we need before we even have to ask.",Service,Staff Attitude,Positive,0.6782758831977844,Admiration,2025-10,Unknown
+review_3,5,2025-10-16,nan,"The food and drinks throughout the resort are top quality, with so much variety that every meal feels different.",Food,Quality,Positive,0.8945884704589844,Admiration,2025-10,Unknown
+review_3,5,2025-10-16,nan,"The atmosphere is perfect — lively when you want it to be, but peaceful when you just want to unwind.",Value,Overall Value,Positive,0.7732506394386292,Admiration,2025-10,Unknown
+review_3,5,2025-10-16,nan,"Every detail here is so well thought out, and you can tell the staff genuinely care about guests having a great experience.",Service,Staff Attitude,Positive,0.9181796908378601,Admiration,2025-10,Unknown
+review_3,5,2025-10-16,nan,"We’ve already said we’ll 100% be coming back — it’s the perfect mix of luxury, comfort, and fun.",Amenities,Entertainment,Positive,0.8758872747421265,Admiration,2025-10,Unknown
+review_3,5,2025-10-16,nan,"If you’re thinking about booking Titanic Deluxe Lara, don’t hesitate — and definitely treat yourself to the cabana experience.",Amenities,Entertainment,Positive,0.7185447812080383,Neutral,2025-10,Unknown
+review_3,5,2025-10-16,nan,It’s worth every penny and has made our stay unforgettable.,Value,Overall Value,Positive,0.9241799116134644,Neutral,2025-10,Unknown
+review_4,5,2025-10-16,nan,"Great family hotel, lots of things to do for the kids, kids club with soft play is ace.",Amenities,Entertainment,Positive,0.9167672991752625,Admiration,2025-10,Unknown
+review_4,5,2025-10-16,nan,Keeps little ones busy.,Value,Overall Value,Neutral,0.5849335193634033,Neutral,2025-10,Unknown
+review_4,5,2025-10-16,nan,For adults great food and a great selection of drinks.,Food,Quality,Positive,0.8508616089820862,Admiration,2025-10,Unknown
+review_4,5,2025-10-16,nan,Areas clean and the teams around hotel are very nice and friendly.,Amenities,Entertainment,Positive,0.8769716024398804,Admiration,2025-10,Unknown
+review_5,5,2025-10-16,"Blackpool, United Kingdom","Very nice hotel amazing staff, service is 5* 
+I usually struggle to drink AI drinks not here, looking to return next year 
+Beautiful weather 
+Staff really care about you 
+Nothing at all was a problem",Service,Staff Attitude,Positive,0.45284757018089294,Admiration,2025-10,United Kingdom
+review_6,5,2025-10-15,nan,"Das Hotel ist super, es ist sehr unterhaltsam.",Location,Proximity to Attractions,Positive,0.9419363141059875,Admiration,2025-10,Unknown
+review_6,5,2025-10-15,nan,Viele Aktivitäten zum machen und immer ein super Abendprogramm.,Amenities,Entertainment,Positive,0.9451923966407776,Admiration,2025-10,Unknown
+review_6,5,2025-10-15,nan,Sehr weiter zu empfehlen für Familie und Jugendliche.,Value,Overall Value,Positive,0.8632304072380066,Neutral,2025-10,Unknown
+review_6,5,2025-10-15,nan,and enterteiner yigit was amaying,Amenities,Entertainment,Positive,0.45077401399612427,Admiration,2025-10,Unknown
+review_7,5,2025-10-15,nan,Wir sind zum 11.,Value,Overall Value,Neutral,0.8535953760147095,Neutral,2025-10,Unknown
+review_7,5,2025-10-15,nan,Mal im Titanic Deluxe in Lara und  erneut sind es traumhafte Ferien.,Location,Proximity to Attractions,Positive,0.8362687230110168,Neutral,2025-10,Unknown
+review_7,5,2025-10-15,nan,Wie in all den Jahren zuvor haben wir für unseren gesamten Aufenthalt eine Beach Cabana genommen.,Amenities,Beach,Neutral,0.6072755455970764,Neutral,2025-10,Unknown
+review_7,5,2025-10-15,nan,"Der Cabana Service ist excellent, vor allem die Arbeit von Ahmed aber auch von allen anderen Mitarbeitern ist perfekt.",Service,Staff Attitude,Positive,0.916510820388794,Admiration,2025-10,Unknown
+review_7,5,2025-10-15,nan,Immer sehr leckeres Mittagessen am Strand und die Cocktails von Ahmed und Aziz könnten nicht besser sein.,Food,Restaurant,Positive,0.8798855543136597,Neutral,2025-10,Unknown
+review_7,5,2025-10-15,nan,Es wird einem jeder Wunsch von den Augen abgelesen.,Value,Overall Value,Negative,0.7004480361938477,Desire,2025-10,Unknown
+review_7,5,2025-10-15,nan,"Diesmal haben wir zwei Zimmer gebucht, beide sind riesig und zu 100% sauber dank dem tollen Housekeeping welches jeden Tag tolle Arbeit leistet.",Service,Housekeeping,Positive,0.9262735843658447,Gratitude,2025-10,Unknown
+review_7,5,2025-10-15,nan,"Vielen Dank an Murat, Ahmed, Aziz und Merve für alles!",Service,Staff Attitude,Positive,0.9222779870033264,Gratitude,2025-10,Unknown
+review_7,5,2025-10-15,nan,Bis bald wieder :),Value,Overall Value,Neutral,0.6198240518569946,Neutral,2025-10,Unknown
+review_8,5,2025-10-15,nan,Angela is the best entertainment for anyone playing darts  and she is also very good at playing it also and adnan is also very very good entertainment team member he is always having good laughs with us and mustafa bar waiter is very pleasant young man and looked after me so much,Service,Staff Attitude,Positive,0.775239884853363,Admiration,2025-10,Unknown
+review_9,5,2025-10-15,nan,Wie immer ist es eine positives Erlebnis hier.,Location,Neighborhood,Positive,0.9416670203208923,Approval,2025-10,Unknown
+review_9,5,2025-10-15,nan,Es ist sozusagen unser zweites zu Hause.,Room,Bed,Neutral,0.8126136064529419,Neutral,2025-10,Unknown
+review_9,5,2025-10-15,nan,"Sauberkeit, Freundlichkeit und gute Unterhaltung.",Service,Staff Attitude,Positive,0.8022463321685791,Neutral,2025-10,Unknown
+review_9,5,2025-10-15,nan,Wir kommen schon seit Jahren und werden es auch weiterhin tun.,Location,Proximity to Attractions,Positive,0.7073296308517456,Neutral,2025-10,Unknown
+review_10,5,2025-10-15,"Frankfurt, Germany",Erste mal im Titanic mit Familie.,Location,Neighborhood,Neutral,0.6082092523574829,Neutral,2025-10,Germany
+review_10,5,2025-10-15,"Frankfurt, Germany",Early Check in sehr gut.,Value,Overall Value,Positive,0.8347136974334717,Neutral,2025-10,Germany
+review_10,5,2025-10-15,"Frankfurt, Germany",Buffet Auswahl sehr gut und internationale Küche.,Food,Quality,Positive,0.8675515055656433,Admiration,2025-10,Germany
+review_11,3,2025-10-14,nan,Currently staying here as a group of 5 adults and 2 toddlers and are utterly disappointed with the hotel.,Location,Neighborhood,Negative,0.9334335923194885,Disappointment,2025-10,Unknown
+review_11,3,2025-10-14,nan,"Having stayed at another hotel (Trendy Lara) in Lara Beach 3 months ago and had a great experience, we decided to push the boat out a little more for this trip as the reason for the holiday was to celebrate my Dad’s 70th Birthday which falls during the stay.",Location,Proximity to Attractions,Positive,0.8370810747146606,Joy,2025-10,Unknown
+review_11,3,2025-10-14,nan,"We paid around £400 each more for this hotel than we could have got the Trendy Lara and based on reviews we thought we were going for a more deluxe holiday experience, this has been far from the case.",Value,Price,Neutral,0.45716148614883423,Neutral,2025-10,Unknown
+review_11,3,2025-10-14,nan,We arrived 10 mins after the main restaurant had closed and were made aware that we’d have to wait 1.5 hours for the midnight snack bar to open in order to have anything to eat.,Food,Restaurant,Negative,0.5253309011459351,Neutral,2025-10,Unknown
+review_11,3,2025-10-14,nan,"We had 2 hungry toddlers with us, who needed to be fed and put to bed so this was far from ideal.",Food,Bar,Neutral,0.44964563846588135,Neutral,2025-10,Unknown
+review_11,3,2025-10-14,nan,"Having stayed at loads of all inclusive resorts all over Europe, I’ve never know one not keep part of the restaurant open with a limited selection of food available for guest arriving late, even 3 star resorts offer this as standard.",Food,Restaurant,Positive,0.39734944701194763,Neutral,2025-10,Unknown
+review_11,3,2025-10-14,nan,"After some complaining, the staff agreed to arrange room service for us however, it took so long to arrive that we were only 10 mins off the snack bar opening.",Service,Room Service,Neutral,0.4812402129173279,Neutral,2025-10,Unknown
+review_11,3,2025-10-14,nan,"The hotel is generally tired and worn, in need of updating.",Amenities,Entertainment,Negative,0.8363358378410339,Disappointment,2025-10,Unknown
+review_11,3,2025-10-14,nan,"The door to the balcony in one of our rooms is broken and coming away from the frame, letting in a draught and noise.",Room,Noise,Negative,0.8857011198997498,Neutral,2025-10,Unknown
+review_11,3,2025-10-14,nan,The kids tables and chairs in the restaurant have seen much better days.,Amenities,Entertainment,Positive,0.635641872882843,Neutral,2025-10,Unknown
+review_11,3,2025-10-14,nan,Generally everything is just in need of a revamp.,Value,Overall Value,Negative,0.6166255474090576,Neutral,2025-10,Unknown
+review_11,3,2025-10-14,nan,"The staff are “fine”, not rude for the most part (although a couple have been) but not particularly friendly either.",Service,Staff Attitude,Negative,0.5764523148536682,Disapproval,2025-10,Unknown
+review_11,3,2025-10-14,nan,"Drinks Service and clearing tables is very slow in the main restaurant, particularly at breakfast when we’ve had to go hunt down someone to place drink orders every day so far, because there is no self service option.",Service,Staff Attitude,Negative,0.8828986287117004,Neutral,2025-10,Unknown
+review_11,3,2025-10-14,nan,The food is “fine” but nothing special.,Food,Quality,Negative,0.4545767903327942,Approval,2025-10,Unknown
+review_11,3,2025-10-14,nan,"All very luke warm, pretty much the same every night.",Room,Bed,Positive,0.3927386403083801,Caring,2025-10,Unknown
+review_11,3,2025-10-14,nan,"Pretty standard all inclusive except that this is meant to be a 5* resort and by comparison to our experience at the other hotel a few months back, falls very short.",Value,Overall Value,Negative,0.6570397019386292,Neutral,2025-10,Unknown
+review_11,3,2025-10-14,nan,"There, we had so much more choice, so many stations where food was prepared fresh, variety from one night to the next and food was actually hot.",Amenities,Entertainment,Positive,0.792926549911499,Neutral,2025-10,Unknown
+review_11,3,2025-10-14,nan,"There are a few additional options for lunch, down towards the beach.",Food,Restaurant,Neutral,0.49559712409973145,Neutral,2025-10,Unknown
+review_11,3,2025-10-14,nan,We had to queue for a while for the Italian lunch restaurant and then half the table’s food was brought over so long before the other half that they’d finished eating before the others had received theirs.,Food,Restaurant,Neutral,0.47656387090682983,Neutral,2025-10,Unknown
+review_11,3,2025-10-14,nan,"The staff didn’t seem at all bothered by our frustration over this, as 3 adults had finished their food whilst 2 adults and 2 toddlers were sat waiting for theirs.",Food,Restaurant,Negative,0.7687903046607971,Neutral,2025-10,Unknown
+review_11,3,2025-10-14,nan,"There are a la carte restaurant options during the evenings, but all at a cost.",Value,Price,Neutral,0.6873552203178406,Neutral,2025-10,Unknown
+review_11,3,2025-10-14,nan,The one thing they do have that exceeds our experience elsewhere is the kids club.,Location,Proximity to Attractions,Positive,0.6457101702690125,Neutral,2025-10,Unknown
+review_11,3,2025-10-14,nan,"This has been recently refurbished and includes a great soft play and lots of activity rooms, which are all very clean and full of things to keep the kids entertained.",Amenities,Entertainment,Positive,0.8638539910316467,Admiration,2025-10,Unknown
+review_11,3,2025-10-14,nan,"Generally, the hotel is “fine”.",Value,Overall Value,Negative,0.7507187128067017,Approval,2025-10,Unknown
+review_11,3,2025-10-14,nan,"Nothing at all special, no extra little bits that you’d expect from a 5* resort to elevate the experience.",Location,Accessibility,Positive,0.46965527534484863,Neutral,2025-10,Unknown
+review_11,3,2025-10-14,nan,It is a 4* resort at best and absolutely not worth the extra money.,Amenities,Entertainment,Negative,0.8769739866256714,Neutral,2025-10,Unknown
+review_11,3,2025-10-14,nan,Save your money and go to Trendy Lara or one of the other resorts in the area.,Value,Fees,Neutral,0.5852401852607727,Neutral,2025-10,Unknown
+review_11,3,2025-10-14,nan,"We’re so gutted that we “splashed out” on this as a treat for a special occasion, expecting my Dad’s 70th to be something truly special, when this just won’t be the case.",Food,Restaurant,Negative,0.8967491984367371,Desire,2025-10,Unknown
+review_12,5,2025-10-14,nan,Wat een heerlijke luxe ervaring!,Amenities,Entertainment,Positive,0.4601374864578247,Admiration,2025-10,Unknown
+review_12,5,2025-10-14,nan,"Het eten is goed, de zwembaden zijn prachtig en vooral: het personeel is onwijs vriendelijk.",Amenities,Entertainment,Positive,0.9179731011390686,Admiration,2025-10,Unknown
+review_12,5,2025-10-14,nan,Niks is te moeilijk of teveel gevraagd.,Value,Overall Value,Neutral,0.5232108235359192,Disappointment,2025-10,Unknown
+review_12,5,2025-10-14,nan,"Enne, boek die cabana aan het zwembad!",Amenities,Pool,Neutral,0.5393085479736328,Neutral,2025-10,Unknown
+review_13,5,2025-10-14,"Maassluis, The Netherlands","Great food, great people kom hier zeker terug!",Food,Quality,Positive,0.9380526542663574,Admiration,2025-10,The Netherlands
+review_13,5,2025-10-14,"Maassluis, The Netherlands",Het zwembad water is wat koud maar verder weinig te klagen!,Amenities,Pool,Negative,0.7851005792617798,Neutral,2025-10,The Netherlands
+review_14,5,2025-10-13,nan,"Amazing hotel, amazing staff!!",Service,Staff Attitude,Positive,0.5890243649482727,Admiration,2025-10,Unknown
+review_14,5,2025-10-13,nan,"Me and the kids absolutely love it here, the whole place is spotless.",Location,Neighborhood,Positive,0.940326988697052,Love,2025-10,Unknown
+review_14,5,2025-10-13,nan,The food is gorgeous also.,Food,Quality,Neutral,0.5190449357032776,Admiration,2025-10,Unknown
+review_14,5,2025-10-13,nan,Thankyou so much Titanic delux Lara we will defo be back 😊,Amenities,Entertainment,Positive,0.902940571308136,Gratitude,2025-10,Unknown
+review_15,4,2025-10-13,nan,"As someone who is apprehensive about what I book, i can honestly say this is a beautiful hotel.",Value,Overall Value,Positive,0.9279687404632568,Admiration,2025-10,Unknown
+review_15,4,2025-10-13,nan,There is a few points that can be worked on but I will give the good and the bad.,Value,Price,Neutral,0.7107046246528625,Admiration,2025-10,Unknown
+review_15,4,2025-10-13,nan,"Good :
+• Clean facilities, overall well maintained hotel.",Amenities,Pool,Positive,0.850793182849884,Admiration,2025-10,Unknown
+review_15,4,2025-10-13,nan,• Clean towels and pool towels daily.,Amenities,Pool,Neutral,0.7310536503791809,Neutral,2025-10,Unknown
+review_15,4,2025-10-13,nan,• Entertainment for children and the kids club is amazing.,Amenities,Entertainment,Positive,0.9218592047691345,Admiration,2025-10,Unknown
+review_15,4,2025-10-13,nan,• Pool and loungers and high quality and lots to do by the pool.,Amenities,Pool,Positive,0.7124187350273132,Neutral,2025-10,Unknown
+review_15,4,2025-10-13,nan,Option of relaxing areas as well as kids pools and music playing.,Amenities,Entertainment,Positive,0.49764934182167053,Neutral,2025-10,Unknown
+review_15,4,2025-10-13,nan,"•staff by the pool on roller skates, always coming round offering drinks.",Amenities,Pool,Neutral,0.6073957681655884,Neutral,2025-10,Unknown
+review_15,4,2025-10-13,nan,•drinks were nice and plenty of options.,Amenities,Entertainment,Positive,0.8031964898109436,Admiration,2025-10,Unknown
+review_15,4,2025-10-13,nan,"Bad :
+• Food choices limited - we found the buffet especially on the evening to be repetitive and poor quality of food.",Food,Restaurant,Negative,0.9329831004142761,Disappointment,2025-10,Unknown
+review_15,4,2025-10-13,nan,We really struggled with this and my partner actually felt like he was on rations.,Food,Restaurant,Negative,0.8812904357910156,Sadness,2025-10,Unknown
+review_15,4,2025-10-13,nan,"Snacks in the day are limited by the pool with only fruit, ice cream or waffles available.",Food,Quality,Neutral,0.6604448556900024,Neutral,2025-10,Unknown
+review_15,4,2025-10-13,nan,Jacket potato bar open 4pm-6pm.,Food,Bar,Neutral,0.8711103796958923,Neutral,2025-10,Unknown
+review_15,4,2025-10-13,nan,If you want nicer food the beach bars are your best bet but again limited timings for this.,Amenities,Beach,Neutral,0.42332780361175537,Neutral,2025-10,Unknown
+review_15,4,2025-10-13,nan,We really struggled with the food at this hotel.,Food,Restaurant,Negative,0.911917507648468,Sadness,2025-10,Unknown
+review_15,4,2025-10-13,nan,My children didn’t eat very well.,Food,Restaurant,Negative,0.8474701046943665,Disappointment,2025-10,Unknown
+review_15,4,2025-10-13,nan,•waiters in the buffet were often abrupt/rude.,Food,Restaurant,Negative,0.9034648537635803,Neutral,2025-10,Unknown
+review_15,4,2025-10-13,nan,They couldn’t speak very good English and only understood coke or tea/orange juice.,Food,Bar,Negative,0.7254001498222351,Neutral,2025-10,Unknown
+review_15,4,2025-10-13,nan,They would only come to you once for a drink.,Service,Staff Attitude,Neutral,0.5425592660903931,Neutral,2025-10,Unknown
+review_15,4,2025-10-13,nan,I did not find them very helpful.,Value,Overall Value,Negative,0.8579396605491638,Disapproval,2025-10,Unknown
+review_15,4,2025-10-13,nan,•bar waiters again were abrupt.,Service,Staff Attitude,Negative,0.8697661757469177,Neutral,2025-10,Unknown
+review_15,4,2025-10-13,nan,Only the ones on the roller skates or the ones serving food I found to be polite.,Food,Quality,Neutral,0.4700491428375244,Neutral,2025-10,Unknown
+review_15,4,2025-10-13,nan,The waiters at the beach bars were also rude/abrupt.,Service,Staff Attitude,Negative,0.9529459476470947,Annoyance,2025-10,Unknown
+review_15,4,2025-10-13,nan,"• storage for clothes in the rooms were very little, struggled as a family of 4 to unpack all of our clothes.",Room,Noise,Negative,0.5407503843307495,Sadness,2025-10,Unknown
+review_15,4,2025-10-13,nan,There were 3 drawers and about 5 coat hangers.,Amenities,Entertainment,Neutral,0.7881612181663513,Neutral,2025-10,Unknown
+review_15,4,2025-10-13,nan,• I wouldn’t say there is loads to do at this hotel.,Location,Proximity to Attractions,Neutral,0.5602969527244568,Neutral,2025-10,Unknown
+review_15,4,2025-10-13,nan,Overall it is a lovely clean hotel.,Value,Overall Value,Positive,0.9250138401985168,Admiration,2025-10,Unknown
+review_15,4,2025-10-13,nan,There is a lot that can be improved on especially when it comes to the food.,Food,Restaurant,Positive,0.7828854322433472,Neutral,2025-10,Unknown
+review_16,5,2025-10-12,nan,Otele ilk kez geldim çocuklarım ve ben burada çok mutluyuz.,Location,Neighborhood,Positive,0.9112094640731812,Joy,2025-10,Unknown
+review_16,5,2025-10-12,nan,Harika bir çocuk kulübü var otelin merkezinde olması harika.,Amenities,Entertainment,Positive,0.9168980717658997,Admiration,2025-10,Unknown
+review_16,5,2025-10-12,nan,Kendi restoranı olması da super bu kaliteli hizmet için çocuklarım adina teşekkür ederim.,Service,Staff Attitude,Positive,0.910727858543396,Gratitude,2025-10,Unknown
+review_17,5,2025-10-12,nan,Good staff friendly and helpful.,Service,Staff Attitude,Positive,0.5816603899002075,Admiration,2025-10,Unknown
+review_17,5,2025-10-12,nan,"Food excellent
+Mash potato brilliant
+Munara very good waitress
+Very clean especially toilets
+Thank you for all.",Service,Staff Attitude,Positive,0.7562034130096436,Gratitude,2025-10,Unknown
+review_18,5,2025-10-12,nan,"Staffs are amazing, so pleasant and friendly.",Service,Staff Attitude,Positive,0.9118652939796448,Admiration,2025-10,Unknown
+review_18,5,2025-10-12,nan,Especially towel lady Ayse always smiling.,Amenities,Entertainment,Positive,0.857785165309906,Neutral,2025-10,Unknown
+review_18,5,2025-10-12,nan,Ersin a la carte Asian is the best.,Food,Restaurant,Positive,0.7745527625083923,Admiration,2025-10,Unknown
+review_18,5,2025-10-12,nan,And service always good,Service,Staff Attitude,Neutral,0.410278856754303,Gratitude,2025-10,Unknown
+review_19,5,2025-10-11,nan,Just come back from a week in this hotel.,Location,Proximity to Attractions,Neutral,0.48840197920799255,Neutral,2025-10,Unknown
+review_19,5,2025-10-11,nan,"Amazing hotel, amazing staff, amazing food, the pools are stunning.",Amenities,Pool,Positive,0.9282745122909546,Admiration,2025-10,Unknown
+review_19,5,2025-10-11,nan,Couldn't fault anything with the place.,Location,Accessibility,Positive,0.5514082312583923,Neutral,2025-10,Unknown
