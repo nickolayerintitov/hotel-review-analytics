@@ -1,9 +1,25 @@
 import type { Review, ReviewAnalysis } from '../types';
 
 // USE REAL HOTEL V2 ANALYSIS DATA (from analyzed_sentences.csv)
+// Calculate average rating from the distribution
+const calculateAverageRating = (distribution: { rating: number; count: number }[]) => {
+  const totalReviews = distribution.reduce((sum, item) => sum + item.count, 0);
+  const weightedSum = distribution.reduce((sum, item) => sum + (item.rating * item.count), 0);
+  return totalReviews > 0 ? weightedSum / totalReviews : 0;
+};
+
+const overallRatingDistribution = [
+  { "rating": 1, "count": 3 },
+  { "rating": 2, "count": 7 },
+  { "rating": 3, "count": 21 },
+  { "rating": 4, "count": 20 },
+  { "rating": 5, "count": 149 }
+];
+
 export const reviewAnalytics: ReviewAnalysis = {
   "totalReviews": 200,
   "totalSentences": 1740,
+  "averageRating": calculateAverageRating(overallRatingDistribution),
   "sentimentBreakdown": {
     "positive": 44.7,
     "negative": 31.9,

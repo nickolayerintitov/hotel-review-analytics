@@ -38,6 +38,7 @@ export interface Review {
 export interface ReviewAnalysis {
   totalReviews: number;
   totalSentences: number;
+  averageRating: number;
   sentimentBreakdown: {
     positive: number;
     negative: number;

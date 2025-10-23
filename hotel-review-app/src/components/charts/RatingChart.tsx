@@ -39,7 +39,7 @@ const RatingChart = ({ data }: RatingChartProps) => {
           />
           <YAxis 
             tick={{ fontSize: 12 }}
-            label={{ value: 'Frequency', angle: -90, position: 'insideLeft' }}
+            label={{ value: 'Number of Comments', angle: -90, position: 'insideLeft' }}
           />
           <Tooltip content={<CustomTooltip />} />
           <Bar dataKey="count" fill="#3b82f6" />

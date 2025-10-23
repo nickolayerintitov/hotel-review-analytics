@@ -16,10 +16,10 @@ const CountryChart = ({ data }: CountryChartProps) => {
           <p className="font-semibold text-gray-900 mb-2">{label}</p>
           <div className="space-y-1">
             <p className="text-sm text-blue-600">
-              Average Rating: {data.averageRating || 'N/A'} stars
+              Review Count: {data.count || 'N/A'}
             </p>
             <p className="text-sm text-green-600">
-              Review Count: {data.count || 'N/A'}
+              Average Rating: {data.averageRating || 'N/A'} stars
             </p>
           </div>
         </div>
@@ -44,21 +44,11 @@ const CountryChart = ({ data }: CountryChartProps) => {
             height={80}
           />
           <YAxis 
-            yAxisId="left" 
-            orientation="left" 
-            stroke="#3b82f6"
             tick={{ fontSize: 12 }}
-          />
-          <YAxis 
-            yAxisId="right" 
-            orientation="right" 
-            stroke="#22c55e"
-            tick={{ fontSize: 12 }}
+            label={{ value: 'Review Count', angle: -90, position: 'insideLeft' }}
           />
           <Tooltip content={<CustomTooltip />} />
-          <Legend />
-          <Bar yAxisId="left" dataKey="averageRating" name="Average Rating" fill="#3b82f6" />
-          <Bar yAxisId="right" dataKey="count" name="Review Count" fill="#22c55e" />
+          <Bar dataKey="count" name="Review Count" fill="#3b82f6" />
         </BarChart>
       </ResponsiveContainer>
     </div>

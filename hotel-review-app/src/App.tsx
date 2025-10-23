@@ -4,7 +4,6 @@ import { Toaster } from 'react-hot-toast';
 
 // Layout Components
 import Header from './components/layout/Header';
-import Footer from './components/layout/Footer';
 
 // Pages - Only Analytics focused
 import AnalyticsPage from './pages/AnalyticsPage';
@@ -38,8 +37,6 @@ function App() {
               <Route path="/about" element={<AboutPage />} />
             </Routes>
           </main>
-          
-          <Footer />
           
           <Toaster
             position="top-right"

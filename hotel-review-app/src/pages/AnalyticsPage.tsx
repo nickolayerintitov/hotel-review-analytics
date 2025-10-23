@@ -33,9 +33,9 @@ const AnalyticsPage = () => {
       textColor: 'text-green-800',
     },
     {
-      title: 'Positive Sentiment',
-      value: `${reviewAnalytics.sentimentBreakdown.positive}%`,
-      description: 'Percentage of sentences with positive sentiment.',
+      title: 'Average Rating',
+      value: `${reviewAnalytics.averageRating.toFixed(1)}`,
+      description: 'Overall average rating from all reviews.',
       icon: TrendingUp,
       bgColor: 'bg-yellow-50',
       textColor: 'text-yellow-800',
@@ -61,9 +61,9 @@ const AnalyticsPage = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h1 className="text-5xl font-bold mb-6">Review Analytics Dashboard</h1>
+            <h1 className="text-5xl font-bold mb-6">Titanic Deluxe Golf Belek - Review Analytics</h1>
             <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-              AI-powered analysis of hotel reviews using advanced sentiment analysis and emotion detection. 
+              AI-powered analysis of hotel reviews for Titanic Deluxe Golf Belek using advanced sentiment analysis and emotion detection. 
               Discover insights from {reviewAnalytics.totalSentences} analyzed sentences.
             </p>
           </motion.div>
@@ -103,9 +103,9 @@ const AnalyticsPage = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Review Analytics Overview</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Titanic Deluxe Golf Belek - Review Analytics Overview</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Interactive visualizations showing review distribution, sentiment analysis, and geographic coverage.
+              Interactive visualizations showing review distribution, sentiment analysis, and geographic coverage for Titanic Deluxe Golf Belek.
             </p>
           </motion.div>
 

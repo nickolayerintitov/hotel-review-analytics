@@ -31,7 +31,7 @@ const MainClassChart = ({ data }: MainClassChartProps) => {
   };
 
   return (
-    <div className="h-96 w-full">
+    <div className="h-[500px] w-full">
       <div className="mb-4 p-3 bg-blue-50 rounded-lg border border-blue-200">
         <p className="text-sm text-blue-800">
           <strong>Note:</strong> Percentages show the proportion of reviews that mention each category. 
@@ -56,7 +56,14 @@ const MainClassChart = ({ data }: MainClassChartProps) => {
             ))}
           </Pie>
           <Tooltip content={<CustomTooltip />} />
-          <Legend />
+          <Legend 
+            verticalAlign="bottom" 
+            height={36}
+            wrapperStyle={{
+              paddingTop: '20px',
+              fontSize: '12px'
+            }}
+          />
         </PieChart>
       </ResponsiveContainer>
     </div>

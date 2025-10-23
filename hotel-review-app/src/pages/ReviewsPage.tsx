@@ -1,140 +1,58 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { MessageSquare, Star, Calendar, User, Filter, Search } from 'lucide-react';
 import { reviewAnalytics } from '../data/hotelData';
 
-// Generate real reviews from AI analysis data
-const generateRealReviews = (analytics: any) => {
-  const reviews: any[] = [];
-  const fakeNames = [
-    'Traveler123', 'Guest_Reviewer', 'Hotel_Explorer', 'Trip_Advisor', 'Vacation_Seeker',
-    'Business_Traveler', 'Family_Trip', 'Solo_Adventurer', 'Couple_Getaway', 'Group_Travel',
-    'Frequent_Guest', 'First_Time_Visitor', 'Loyal_Customer', 'Weekend_Warrior', 'Holiday_Maker',
-    'City_Explorer', 'Beach_Lover', 'Mountain_Goer', 'Culture_Seeker', 'Food_Critic'
-  ];
-  
-  // Categories and sentiments are now derived from the actual data
-  
-  // Generate reviews from AI analysis data
-  if (analytics.aiAnalysis && analytics.aiAnalysis.topSentences) {
-    let reviewId = 1;
-    
-    // Create reviews from real AI-analyzed sentences
-    Object.entries(analytics.aiAnalysis.topSentences).forEach(([key, sentence]) => {
-      const [category, sentiment] = key.split(' - ');
-      const randomName = fakeNames[Math.floor(Math.random() * fakeNames.length)];
-      const randomDate = new Date(2024, Math.floor(Math.random() * 12), Math.floor(Math.random() * 28) + 1);
-      
-      // Determine rating based on sentiment
-      let rating = 3; // neutral default
-      if (sentiment === 'Positive') rating = Math.floor(Math.random() * 2) + 4; // 4-5 stars
-      if (sentiment === 'Negative') rating = Math.floor(Math.random() * 2) + 1; // 1-2 stars
-      
-      reviews.push({
-        id: reviewId.toString(),
-        hotelId: '1',
-        user: randomName,
-        date: randomDate.toISOString().split('T')[0],
-        rating: rating,
-        comment: sentence as string,
-        sentiment: sentiment as 'Positive' | 'Negative' | 'Neutral',
-        category: category as any
-      });
-      reviewId++;
-    });
+// Load merged reviews JSON (each entry is a full review merged by review_id)
+const loadAnalyzedReviews = async () => {
+  try {
+    const response = await fetch('/merged_reviews.json');
+    if (!response.ok) throw new Error('Failed to load merged reviews');
+    const data = await response.json();
+    return Array.isArray(data) ? data : [];
+  } catch (error) {
+    console.error('Error loading merged reviews:', error);
+    return [];
   }
-  
-  // Add additional realistic reviews to reach closer to 34 total reviews
-  const additionalReviews = [
-    {
-      user: 'Happy_Camper',
-      comment: 'The entertainment team was absolutely fantastic! They made our stay unforgettable with their energy and fun activities.',
-      category: 'Amenities',
-      sentiment: 'Positive',
-      rating: 5
-    },
-    {
-      user: 'Wanderlust_Seeker',
-      comment: 'Great location with easy access to all the main attractions. The neighborhood felt safe and welcoming.',
-      category: 'Location',
-      sentiment: 'Positive',
-      rating: 4
-    },
-    {
-      user: 'Hotel_Enthusiast',
-      comment: 'The room was clean but quite small. The bed was comfortable though, and the view was decent.',
-      category: 'Room',
-      sentiment: 'Neutral',
-      rating: 3
-    },
-    {
-      user: 'Travel_Blogger',
-      comment: 'The food quality was disappointing for the price we paid. The breakfast selection was limited and not very fresh.',
-      category: 'Food',
-      sentiment: 'Negative',
-      rating: 2
-    },
-    {
-      user: 'Review_Expert',
-      comment: 'Overall good value for money. The service was friendly and the facilities were well-maintained.',
-      category: 'Value',
-      sentiment: 'Positive',
-      rating: 4
-    },
-    {
-      user: 'Vacation_Lover',
-      comment: 'The staff was incredibly helpful and friendly throughout our stay. They went above and beyond to make our experience memorable.',
-      category: 'Service',
-      sentiment: 'Positive',
-      rating: 5
-    },
-    {
-      user: 'Business_Traveler_Pro',
-      comment: 'Perfect location with easy access to all major attractions. Could not have asked for a better spot in the city.',
-      category: 'Location',
-      sentiment: 'Positive',
-      rating: 5
-    },
-    {
-      user: 'Family_Adventurer',
-      comment: 'The WiFi was unreliable and the room service was slow. Not ideal for business travelers.',
-      category: 'Amenities',
-      sentiment: 'Negative',
-      rating: 2
-    }
-  ];
-  
-  // Add additional reviews
-  additionalReviews.forEach((review, index) => {
-    const randomDate = new Date(2024, Math.floor(Math.random() * 12), Math.floor(Math.random() * 28) + 1);
-    reviews.push({
-      id: (reviews.length + index + 1).toString(),
-      hotelId: '1',
-      user: review.user,
-      date: randomDate.toISOString().split('T')[0],
-      rating: review.rating,
-      comment: review.comment,
-      sentiment: review.sentiment,
-      category: review.category
-    });
-  });
-  
-  return reviews;
 };
 
 const ReviewsPage = () => {
-  const [reviews] = useState<any[]>(() => generateRealReviews(reviewAnalytics));
+  const [reviews, setReviews] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [selectedSentiment, setSelectedSentiment] = useState('All');
 
+  useEffect(() => {
+    const loadReviews = async () => {
+      setLoading(true);
+      const loadedReviews = await loadAnalyzedReviews();
+      setReviews(loadedReviews);
+      setLoading(false);
+    };
+    loadReviews();
+  }, []);
+
   const categories: string[] = ['All', 'Service', 'Location', 'Amenities', 'Food', 'Room', 'Value'];
   const sentiments: string[] = ['All', 'Positive', 'Negative', 'Neutral'];
 
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-primary-600 mx-auto"></div>
+          <p className="mt-4 text-lg text-gray-600">Loading reviews...</p>
+        </div>
+      </div>
+    );
+  }
+
   const filteredReviews = reviews.filter(review => {
     const matchesSearch = review.comment.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                         review.user.toLowerCase().includes(searchQuery.toLowerCase());
-    const matchesCategory = selectedCategory === 'All' || review.category === selectedCategory;
+                         review.id.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                         (review.location && review.location.toLowerCase().includes(searchQuery.toLowerCase()));
+    const matchesCategory = selectedCategory === 'All' || 
+                           (review.mainClasses && review.mainClasses.includes(selectedCategory));
     const matchesSentiment = selectedSentiment === 'All' || review.sentiment === selectedSentiment;
     
     return matchesSearch && matchesCategory && matchesSentiment;
@@ -208,9 +126,9 @@ const ReviewsPage = () => {
             <div className="bg-white rounded-xl p-6 shadow-soft border border-secondary-200">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-secondary-600 text-sm font-medium mb-1">Positive Reviews</p>
+                  <p className="text-secondary-600 text-sm font-medium mb-1">Average Rating</p>
                   <p className="text-2xl font-bold text-success-600">
-                    {reviewAnalytics.sentimentBreakdown.positive}%
+                    {reviewAnalytics.averageRating.toFixed(1)}
                   </p>
                 </div>
                 <div className="w-12 h-12 bg-success-50 rounded-lg flex items-center justify-center">
@@ -307,10 +225,13 @@ const ReviewsPage = () => {
                       <User className="w-5 h-5 text-primary-600" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-secondary-900">{review.user}</h3>
+                      <h3 className="font-semibold text-secondary-900">{review.id}</h3>
                       <div className="flex items-center space-x-2 text-sm text-secondary-500">
                         <Calendar className="w-4 h-4" />
                         <span>{new Date(review.date).toLocaleDateString()}</span>
+                        {review.location && review.location !== 'nan' && (
+                          <span className="text-xs text-gray-500">• {review.location}</span>
+                        )}
                       </div>
                     </div>
                   </div>
@@ -335,17 +256,25 @@ const ReviewsPage = () => {
                   {review.comment}
                 </p>
 
-                <div className="flex items-center space-x-3">
+                <div className="flex flex-wrap items-center gap-2">
                   <span
                     className={`px-3 py-1 rounded-full text-xs font-medium ${getSentimentColor(review.sentiment)}`}
                   >
                     {review.sentiment}
                   </span>
-                  <span
-                    className={`px-3 py-1 rounded-full text-xs font-medium ${getCategoryColor(review.category)}`}
-                  >
-                    {review.category}
-                  </span>
+                  {review.mainClasses && review.mainClasses.map((mainClass: string, index: number) => (
+                    <span
+                      key={index}
+                      className={`px-3 py-1 rounded-full text-xs font-medium ${getCategoryColor(mainClass)}`}
+                    >
+                      {mainClass}
+                    </span>
+                  ))}
+                  {review.country && review.country !== 'Unknown' && (
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-gray-100 text-gray-700">
+                      {review.country}
+                    </span>
+                  )}
                 </div>
               </motion.div>
             ))}
