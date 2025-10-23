@@ -33,9 +33,9 @@ export const reviewAnalytics: ReviewAnalysis = {
     { "rating": 5, "count": 149 }
   ],
   "monthlyRatingAverages": [
-    { "month": "2025-08", "average_rating": 3.66, "review_count": 54 },
-    { "month": "2025-09", "average_rating": 3.91, "review_count": 102 },
-    { "month": "2025-10", "average_rating": 3.48, "review_count": 44 }
+    { "month": "2025-08", "average_rating": 4.42, "review_count": 54 },
+    { "month": "2025-09", "average_rating": 4.58, "review_count": 102 },
+    { "month": "2025-10", "average_rating": 4.61, "review_count": 44 }
   ],
   "mainClassRatings": [
     { "category": "Amenities", "averageRating": 3.83, "count": 149 },
@@ -65,9 +65,9 @@ export const reviewAnalytics: ReviewAnalysis = {
       { "rating": 5, "count": 149 }
     ],
     "monthlyRatingAverages": [
-      { "month": "2025-08", "average_rating": 3.66, "review_count": 54 },
-      { "month": "2025-09", "average_rating": 3.91, "review_count": 102 },
-      { "month": "2025-10", "average_rating": 3.48, "review_count": 44 }
+      { "month": "2025-08", "average_rating": 4.42, "review_count": 54 },
+      { "month": "2025-09", "average_rating": 4.58, "review_count": 102 },
+      { "month": "2025-10", "average_rating": 4.61, "review_count": 44 }
     ],
     "mainClassDistribution": [
       { "name": "Amenities", "value": 149, "percentage": 74.5 },
