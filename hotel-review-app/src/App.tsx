@@ -5,7 +5,8 @@ import { Toaster } from 'react-hot-toast';
 // Layout Components
 import Header from './components/layout/Header';
 
-// Pages - Only Analytics focused
+// Pages
+import LandingPage from './pages/LandingPage';
 import AnalyticsPage from './pages/AnalyticsPage';
 import ReviewsPage from './pages/ReviewsPage';
 import AboutPage from './pages/AboutPage';
@@ -26,12 +27,12 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <Router>
-        <div className="min-h-screen bg-gradient-to-br from-secondary-50 to-primary-50">
+        <div className="min-h-screen">
           <Header />
           
           <main className="flex-1">
             <Routes>
-              <Route path="/" element={<AnalyticsPage />} />
+              <Route path="/" element={<LandingPage />} />
               <Route path="/analytics" element={<AnalyticsPage />} />
               <Route path="/reviews" element={<ReviewsPage />} />
               <Route path="/about" element={<AboutPage />} />

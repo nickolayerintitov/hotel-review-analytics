@@ -7,8 +7,13 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
 
+  // Don't show header on landing page
+  if (location.pathname === '/') {
+    return null;
+  }
+
   const navigation = [
-    { name: 'Analytics', href: '/', icon: BarChart3 },
+    { name: 'Analytics', href: '/analytics', icon: BarChart3 },
     { name: 'Reviews', href: '/reviews', icon: MessageSquare },
     { name: 'About', href: '/about', icon: Info },
   ];
