@@ -206,3 +206,69 @@ export interface ReviewFormData {
   };
   tags: string[];
 }
+
+// Alert & Case Management Types
+export interface Alert {
+  id: string;
+  type: 'sentiment_drop' | 'negative_review' | 'rating_decline' | 'category_issue' | 'critical_review';
+  severity: 'low' | 'medium' | 'high' | 'critical';
+  title: string;
+  description: string;
+  category?: string;
+  value?: number;
+  previousValue?: number;
+  change?: number;
+  threshold?: number;
+  timestamp: string;
+  status: 'active' | 'acknowledged' | 'resolved';
+  assignedTo?: string;
+  reviewId?: string;
+  reviewText?: string;
+  reviewRating?: number;
+  reviewDate?: string;
+}
+
+export interface Case {
+  id: string;
+  alertId: string;
+  title: string;
+  description: string;
+  category: string;
+  priority: 'low' | 'medium' | 'high' | 'urgent';
+  status: 'open' | 'in_progress' | 'resolved' | 'closed';
+  assignedTo: string;
+  assignedBy: string;
+  createdAt: string;
+  updatedAt: string;
+  dueDate?: string;
+  reviewId?: string;
+  reviewText?: string;
+  reviewRating?: number;
+  reviewDate?: string;
+  notes?: string[];
+}
+
+export interface StaffMember {
+  id: string;
+  name: string;
+  role: string;
+  department: string;
+  email: string;
+  avatar?: string;
+  activeCases: number;
+  totalCases: number;
+  averageResolutionTime: number; // in hours
+}
+
+export interface AlertRule {
+  id: string;
+  name: string;
+  description: string;
+  type: 'sentiment_drop' | 'negative_review' | 'rating_decline' | 'category_issue' | 'critical_review';
+  category?: string;
+  threshold: number;
+  timeWindow: number; // in hours
+  enabled: boolean;
+  autoAssign?: boolean;
+  assignTo?: string;
+}

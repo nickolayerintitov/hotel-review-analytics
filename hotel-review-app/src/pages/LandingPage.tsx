@@ -9,7 +9,6 @@ import {
   TrendingUp, 
   MapPin,
   Mail,
-  Phone,
   Zap,
   Target,
   PieChart,
@@ -419,7 +418,7 @@ const LandingPage = () => {
             <div className="text-center mb-8">
               <h3 className="text-3xl font-bold text-gray-900 mb-4">Lifetime Rate</h3>
               <div className="flex items-center justify-center mb-4">
-                <span className="text-6xl font-bold text-blue-600">$99</span>
+                <span className="text-6xl font-bold text-blue-600">$125</span>
                 <span className="text-2xl text-gray-600 ml-2">/month</span>
               </div>
               <p className="text-lg text-gray-600 mb-6">Billed annually ($1,188/year)</p>
@@ -485,12 +484,9 @@ const LandingPage = () => {
               <div className="space-y-2">
                 <div className="flex items-center">
                   <Mail className="w-5 h-5 text-blue-400 mr-3" />
-                  <span className="text-gray-400">hello@reviewai.com</span>
+                  <span className="text-gray-400">reviewai@gmail.com</span>
                 </div>
-                <div className="flex items-center">
-                  <Phone className="w-5 h-5 text-blue-400 mr-3" />
-                  <span className="text-gray-400">+1 (555) 123-4567</span>
-                </div>
+              
               </div>
             </div>
             
@@ -527,7 +523,7 @@ const LandingPage = () => {
           
           <div className="border-t border-gray-800 mt-8 pt-8 text-center">
             <p className="text-gray-400">
-              © 2024 ReviewAI. All rights reserved.
+              © 2025 ReviewAI. All rights reserved.
             </p>
           </div>
         </div>

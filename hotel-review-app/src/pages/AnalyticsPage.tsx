@@ -13,6 +13,7 @@ import SubclassDistribution from '../components/charts/SubclassDistribution';
 import SentimentByClass from '../components/charts/SentimentByClass';
 import EmotionByClass from '../components/charts/EmotionByClass';
 import AIAnalysis from '../components/charts/AIAnalysis';
+import Alerts from '../components/charts/Alerts';
 
 const AnalyticsPage = () => {
   const stats = [
@@ -261,6 +262,31 @@ const AnalyticsPage = () => {
             transition={{ duration: 0.6, delay: 0.9 }}
           >
             <AIAnalysis data={reviewAnalytics} />
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Alerts & Case Management Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1.0 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Alerts & Case Management</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Automated alerts and case management system to track and resolve issues identified in guest reviews.
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1.1 }}
+          >
+            <Alerts data={reviewAnalytics} />
           </motion.div>
         </div>
       </section>
